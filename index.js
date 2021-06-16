@@ -7,7 +7,11 @@ app.use(cors());
 app.use(express.json());
 const { dbConnection } = require("./db/db.connect");
 
+const quizDataRoute = require("./routes/quiz.route");
+
 dbConnection();
+
+app.use("/quizdata", quizDataRoute);
 
 app.get("/", (req, res) => {
     res.send("Trivia App active...")
