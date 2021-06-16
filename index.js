@@ -1,3 +1,4 @@
+const dotenv = require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const app = express();
@@ -9,8 +10,7 @@ app.get("/", (req, res) => {
     res.send("Trivia App active...")
 })
 
-const PORT = 8000;
-
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
-    console.log(`Project running on http://localhost:8000...`);
+    console.log(`Project running on http://localhost:${PORT}...`);
 })
