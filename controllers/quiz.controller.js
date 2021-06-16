@@ -16,7 +16,16 @@ const getAllQuiz = async(req, res) => {
     }
 }
 
+const getQuizDetails = async(req, res) => {
+    const quizdata = req.quizdata;
+    console.log(quizdata);
+    res.json({
+        success: true,
+        quizdata
+    })
+}
 
 module.exports = {
-    getAllQuiz
+    getAllQuiz,
+    getQuizDetails
 }
