@@ -1,0 +1,716 @@
+const data = [
+    new QuizData({
+        "name": "F.R.I.E.N.D.S",
+        "coverImageUrl": "https://hbomax-images.warnermediacdn.com/images/GXdbR_gOXWJuAuwEAACVH/tileburnedin?size=1280x720&partner=hbomaxcom&host=artist.api.cdn.hbo.com&w=1280",
+        "totalScore": 50,
+        "questions": [
+            {
+                "question": "The series Friends is set in which city?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "Los Angeles",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "New York City",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "Miami",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Seattle",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "question": "What’s the name of Joey’s penguin?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "Snowflake",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Waddle",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Huggsy",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "Bobber",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "question": "What job does Ross have?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "Paleontologist",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "Artist",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Photographer",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Teacher",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "question": "What does Joey never share?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "His books",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "His information",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "His food",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "His DVDs",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "question": "How many seasons did the series have?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "9",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "11",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "10",
+                        "isAnswer": true
+                    }
+                ]
+            },
+            {
+                "question": "What are Ross and Monica’s parents called?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "Jack and Jill",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Philip and Holly",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Jack and Judy",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "Margaret and Peter",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "question": "Who was Chandler’s TV magazine always addressed to?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "Chanandler Bong",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "Chanandler Bang",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Chanandler Bing",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Chanandler Beng",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "question": "What song is Phoebe best known for?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "Smelly Cat",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "Smelly Dog",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Smelly Rabbit",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Smelly Worm",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "question": "What kind of uniform does Joey wear to Monica and Chandler’s wedding?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "Chef",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Fire fighter",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "A baseball player",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Soldier",
+                        "isAnswer": true
+                    }
+                ]
+            },
+            {
+                "question": "Who sang the Friends theme?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "The Banksys",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "The Rembrandts",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "The Constables",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "The Da Vinci Band",
+                        "isAnswer": false
+                    }
+                ]
+            }
+        ]
+    }),
+    new QuizData({
+        "name": "Marvel Cinematic Universe (MCU)",
+        "coverImageUrl": "https://static.wikia.nocookie.net/marvelcomicsfanon/images/2/2b/Maxresdefault.png/revision/latest?cb=20190831090356",
+        "totalScore": 50,
+        "questions": [
+            {
+                "question": "What year was the first Iron Man movie released, kicking off the Marvel Cinematic Universe?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "2005",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "2008",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "2010",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "2012",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "question": "In the Incredible Hulk, what does Tony tell Thaddeus Ross at the end of the film?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "That he wants to study The Hulk",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "That he knows about S.H.I.E.L.D.",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "That they are putting a team together",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "That Thaddeus owes him money",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "question": "What is Captain America’s shield made of?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "Adamantium",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Vibranium",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "Promethium",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Carbonadium",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "question": "What is the real name of the Black Panther?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "T’Challa",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "M’Baku",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "N’Jadaka",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "N’Jobu",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "question": "What is the alien race Loki sends to invade Earth in The Avengers?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "The Skrulls",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "The Flerkens",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "The Kree",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "The Chitauri",
+                        "isAnswer": true
+                    }
+                ]
+            },
+            {
+                "question": "What does the Winter Soldier say after Steve recognizes him for the first time?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "He’s gone.",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "What did you say?",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Who the hell is Bucky?",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "Do I know you?",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "question": "What type of doctor is Stephen Strange?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "Neurosurgeon",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "Cardiothoracic Surgeon",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Trauma Surgeon",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Plastic Surgeon",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "question": "Which MCU movie featured Spider-Man’s first appearance?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "Spider-Man: Homecoming",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Captain America: Civil War",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "Iron Man 3",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Avengers: Age of Ultron",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "question": "Which of these characters did NOT appear in Phase One?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "Thor",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Captain America",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Black Panther",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "Black Widow",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "question": "Who plays Nick Fury?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "Samuel L. Jackson",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "Denzel Washington",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Laurence Fishburne",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Morgan Freeman",
+                        "isAnswer": false
+                    }
+                ]
+            }
+        ]
+    }),
+    new QuizData({
+        "name": "React Js",
+        "coverImageUrl": "https://www.wearetechtonic.com/wp-content/uploads/2019/12/ReactJS-Development.jpg",
+        "totalScore": 50,
+        "questions": [
+            {
+                "question": "What is State in React Js?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "A presistant storage",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "An internal data store (object) of component",
+                        "isAnswer": true
+                    }
+                ]
+            },
+            {
+                "question": "What is Babel?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "A transpiler.",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "An interpreter",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "A Compiler",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Both Compiler and Transpilar",
+                        "isAnswer": true
+                    }
+                ]
+            },
+            {
+                "question": "Which of following is used to pass data to a component from outside?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "PropTypes",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "setState",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "props",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "render with arguments",
+                        "isAnswer": true
+                    }
+                ]
+            },
+            {
+                "question": "What does the webpack command do?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "A module bundle",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "Runs react local development server.",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Transpiles all the Javascript down into one file",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "None of the above",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "question": "What does the webpack command do?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "A module bundle",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "Runs react local development server.",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Transpiles all the Javascript down into one file",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "None of the above",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "question": "props in react can________",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "Be changed inside the component",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Not be changed in the component",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "Be changed in side other component",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "None of the above",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "question": "Which of the following is the correct data flow sequence of flux concept?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "Dispatcher->Action->Store->View",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Action->Dispatcher->Store->View",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "Action->Dispatcher->View->Store",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Action->Store->Dispatcher->View",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "question": "The state in react can be updated by call to setState method. These calls are",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "Synchronous in nature",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Are asynchronous but can be made synchronous when required",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Asynchronous in nature",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "None of above",
+                        "isAnswer": false
+                    }
+                ]
+            },
+            {
+                "question": "What are two ways data gets handled in react?",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "services & components",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "state & services",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "state & component",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "state & props",
+                        "isAnswer": true
+                    }
+                ]
+            },
+            {
+                "question": "React Js is developed by",
+                "points": 5,
+                "negativePoints": 2,
+                "options": [
+                    {
+                        "content": "Google",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Microsoft",
+                        "isAnswer": false
+                    },
+                    {
+                        "content": "Facebook",
+                        "isAnswer": true
+                    },
+                    {
+                        "content": "None of the above",
+                        "isAnswer": false
+                    }
+                ]
+            }
+        ]
+    })
+]
+
+
+let done = 0;
+for(let i =0; i < data.length; i++) {
+    data[i].save(function(err, result) {
+        done++;
+        if(done === data.length) {
+            funExit();
+        }
+    });
+}
+
+function funExit() {
+    mongoose.disconnect();
+}
